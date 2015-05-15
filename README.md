@@ -62,6 +62,7 @@ MetadataFormat: "yaml"
 
 ## example post ##
 
+```
 ---
 date: "2015-05-15T14:34:06-04:00"
 draft: true
@@ -88,6 +89,7 @@ eggs = True
 while eggs:
     print("Would you like spam with that?")
     print("Spam?! {answer}!".format(answer=spam))
+```
 ```
 
 # Contact me
