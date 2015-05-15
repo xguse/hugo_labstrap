@@ -1,13 +1,13 @@
-# notestrap 
+# labstrap 
 
-notestrap is a double-column theme for [Hugo](http://gohugo.io/).
+labstrap is a double-column theme for [Hugo](http://gohugo.io/).
 It is modified from [dim0627](https://github.com/dim0627)'s [Beg](https://github.com/dim0627/hugo_theme_beg) theme which, in turn, was inspired by [kAworu/octostrap3](https://github.com/kAworu/octostrap3).
 
 I have added (will continue to add) features and structure that I find useful for keeping notes pertaining to my research.
 
 It is a work in progress and __no one__ should probably ever use it -- including _me_.  But I have always been a bit stubborn.
 
-![Beg Screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_beg/master/images/top.png)
+![Beg Screenshot](https://github.com/xguse/hugo_labstrap/blob/develop/images/screenshot.png)
 
 ## Features
 
