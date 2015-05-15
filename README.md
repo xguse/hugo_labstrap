@@ -95,4 +95,4 @@ MetadataFormat: "yaml"
 
 # Contact me
 
-Please mail to `gus.dunn@yale.edu`.
+Please mail to `gus.dunn [at] yale edu`.
