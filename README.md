@@ -63,33 +63,33 @@ MetadataFormat: "yaml"
 ## example post ##
 
 
-  ---
-  date: "2015-05-15T14:34:06-04:00"
-  draft: true
-  title: "init"
-  tags: ['x','y']
-  categories: ['intro']
-  ---
+    ---
+    date: "2015-05-15T14:34:06-04:00"
+    draft: true
+    title: "init"
+    tags: ['x','y']
+    categories: ['intro']
+    ---
 
-  # Hello... World? #
+    # Hello... World? #
 
-  \*cough cough\* is this thing on?
+    \*cough cough\* is this thing on?
 
-  # MathJax #
+    # MathJax #
 
-  Does this render: `$\mathbf{F} = \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\mathbf v)}{\mathrm{d}t}$` ?
+    Does this render: `$\mathbf{F} = \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\mathbf v)}{\mathrm{d}t}$` ?
 
-  # Code #
+    # Code #
 
 
-  ```python
-  # lets use MUCH spam here
-  spam = 'yes, please'
-  eggs = True
-  while eggs:
-      print("Would you like spam with that?")
-      print("Spam?! {answer}!".format(answer=spam))
-  ```
+    ```python
+    # lets use MUCH spam here
+    spam = 'yes, please'
+    eggs = True
+    while eggs:
+        print("Would you like spam with that?")
+        print("Spam?! {answer}!".format(answer=spam))
+    ```
 
 
 
