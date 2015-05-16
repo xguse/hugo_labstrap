@@ -21,6 +21,7 @@
                     <h2 class="panel-title">Tags</h2>
                 </div>
                 <div class="list-group">
+                    <!-- SIDEBAR TAGS -->
                     {{ $baseurl := .Site.BaseUrl }}
                     {{ range $name, $value := .Site.Taxonomies.tags }}
                     <!--a href="{{ $baseurl }}/tags/{{ $name | urlize }}" style="font-size: {{ add 8 (mul 3 $value.Count) }}px;"-->
