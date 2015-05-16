@@ -16,12 +16,46 @@
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-12">
+            <!-- SIDEBAR CATEGORIES -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Categories</h2>
+                </div>
+                <div class="list-group">
+                    {{ $baseurl := .Site.BaseUrl }}
+                    {{ range $name, $value := .Site.Taxonomies.categories }}
+                    <!--a href="{{ $baseurl }}/categories/{{ $name | urlize }}" style="font-size: {{ add 8 (mul 3 $value.Count) }}px;"-->
+                    <a href="{{ $baseurl }}/categories/{{ $name | urlize }}" class="list-group-item">
+                        <span class="badge">{{ .Count }}</span>
+                        {{ $name }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- SIDEBAR PROJECTS -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Projects</h2>
+                </div>
+                <div class="list-group">
+                    {{ $baseurl := .Site.BaseUrl }}
+                    {{ range $name, $value := .Site.Taxonomies.projects }}
+                    <!--a href="{{ $baseurl }}/projects/{{ $name | urlize }}" style="font-size: {{ add 8 (mul 3 $value.Count) }}px;"-->
+                    <a href="{{ $baseurl }}/projects/{{ $name | urlize }}" class="list-group-item">
+                        <span class="badge">{{ .Count }}</span>
+                        {{ $name }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- SIDEBAR TAGS -->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">Tags</h2>
                 </div>
                 <div class="list-group">
-                    <!-- SIDEBAR TAGS -->
                     {{ $baseurl := .Site.BaseUrl }}
                     {{ range $name, $value := .Site.Taxonomies.tags }}
                     <!--a href="{{ $baseurl }}/tags/{{ $name | urlize }}" style="font-size: {{ add 8 (mul 3 $value.Count) }}px;"-->
@@ -32,6 +66,8 @@
                     {{ end }}
                 </div>
             </div>
+            
+
         </div>
 
     </div>
