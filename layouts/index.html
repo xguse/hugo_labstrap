@@ -4,7 +4,7 @@
     <div class="col-md-8">
         <div class="posts">
             {{ range first 10 (where .Data.Pages "Type" "post") }}
-            {{ .Render "li" }}
+            {{ .Render "list" }}
             {{ end }}
             <nav>
                 <ul class="pager">
