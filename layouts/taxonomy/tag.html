@@ -2,20 +2,22 @@
 
 <!-- <div class="posts">
     {{ range .Data.Pages }}
-    {{ .Render "li"}}
+    {{ .Render "list"}}
     {{ end }}
 </div> -->
 
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
-  </div>
-</section>
+<div class="panel panel-info">
+      <div class="panel-heading">
+            <h1 class="panel-title">Entries tagged with "{{ .Title }}"</h1>
+      </div>
+      <div class="panel-body">
+            {{ range .Data.Pages }}
+            {{ .Render "list"}}
+            {{ end }}
 
-<aside id="meta"> </aside>
+      </div>
+      
+</div>
 
 {{ partial "default_foot.html" . }}
 
