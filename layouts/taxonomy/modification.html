@@ -1,0 +1,23 @@
+{{ partial "default_head.html" . }}
+
+<!-- <div class="posts">
+    <h1 id="title">Project: {{ .Title }}</h1>
+    {{ range .Data.Pages }}
+    {{ .Render "list"}}
+    {{ end }}
+</div> -->
+
+<div class="panel panel-info">
+      <div class="panel-heading">
+            <h1 class="panel-title">Entries tagged as modified on "{{ .Title }}"</h1>
+      </div>
+      <div class="panel-body">
+            {{ range .Data.Pages }}
+            {{ .Render "list"}}
+            {{ end }}
+
+      </div>
+      
+</div>
+
+{{ partial "default_foot.html" . }}

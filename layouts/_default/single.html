@@ -16,14 +16,10 @@
                 </h1>
             </header>
 
-            <div class="post-content">
-                {{ .Content }}
-            </div>
-
-            <aside>
+<!--             <aside>
                 {{ $baseurl := .Site.BaseURL }}
                 <ul class="list-inline post-tags">
-                    {{ range .Params.tags }}
+                    Tags: {{ range .Params.tags }}
                     <li>
                         <a href="{{ $baseurl }}/tags/{{ . | urlize }}">
                             <i class="fa fa-tags"></i>
@@ -31,8 +27,62 @@
                         </a>
                     </li>
                     {{ end }}
+
+                    Tags: {{ range .Params.tags }}
+                    <li>
+                        <a href="{{ $baseurl }}/tags/{{ . | urlize }}">
+                            <i class="fa fa-pencil-square-o"></i>
+                            {{ . }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </aside> -->
+
+
+                {{ $baseurl := .Site.BaseURL }}
+
+                <ul class="list-group list-unstyled">
+                    <li>
+                        <ul class="list-inline">
+                            Tags: {{ range .Params.tags }}
+                            <li>
+                                <a href="{{ $baseurl }}/tags/{{ . | urlize }}">
+                                    <i class="fa fa-tags"></i>
+                                    {{ . }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-inline">
+                            Edits: {{ range .Params.modifications }}
+                            <li>
+                                <a href="{{ $baseurl }}/modifications/{{ . | urlize }}">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    {{ . }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
                 </ul>
 
+
+            <!-- TABLE OF CONTENTS -->
+            <div id="toc" class="well">
+            <h4>Outline</h4>
+                {{ .TableOfContents }}
+                </div>
+
+
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+
+            <aside>
                 {{ if .Site.Params.ShowRelatedPost }}
                 <!-- Related posts. -->
                 <h3>Related Entries:</h3>
